@@ -1,2 +1,2 @@
 # Blackops Documentation
-> A redacting API for censoring sentive informations in image
+A redacting API for censoring sentive informations in image

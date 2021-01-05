@@ -21,7 +21,20 @@ echo $TOKEN
 ```shell
 docker login -u AWS -p $TOKEN https://046687694157.dkr.ecr.cn-northwest-1.amazonaws.com.cn
 ```
-* 获取镜像
+* 获取镜像，大概4g多一点
 ```shell
 docker pull 046687694157.dkr.ecr.cn-northwest-1.amazonaws.com.cn/blackops:latest
 ```
+
+### 运行docker
+```shell
+docker run -t -d --rm --name blackops blackops:latest
+```
+
+### 运行服务
+```shell
+docker exec -it blackops /bin/bash taping_gunicorn.sh 10
+```
+* 这样就能在 http://[host]:8867 看到服务了
+
+## 服务调用

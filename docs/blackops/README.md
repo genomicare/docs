@@ -28,8 +28,9 @@ docker pull 046687694157.dkr.ecr.cn-northwest-1.amazonaws.com.cn/blackops:latest
 
 ### 运行docker
 ```shell
-docker run -t -d --rm --name blackops blackops:latest
+docker run -t -d --rm -dp 8867:8867 --name blackops 046687694157.dkr.ecr.cn-northwest-1.amazonaws.com.cn/blackops
 ```
+当然， 在运行这一步的时候， 您可以更改映射的外部端口号， 在使用接口时访问同样的端口号即可
 
 ### 运行服务
 ```shell
@@ -38,3 +39,6 @@ docker exec -it blackops /bin/bash taping_gunicorn.sh 10
 * 这样就能在 http://[host]:8867 看到服务了
 
 ## 服务调用
+
+### 测试页面
+可以进入```http://[host]:8867/static/test.html```测试， 页面上会打印出调用接口时实际传入的参数

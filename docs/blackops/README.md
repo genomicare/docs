@@ -83,3 +83,15 @@ docker exec -it blackops /bin/bash taping_gunicorn.sh 10
 * return_json:bool, 默认false, 是否返回ocr的结果用于分析
 * mask_keys: list[string], 默认["姓名", "住院"], 需要屏蔽的关键词们, 身份证不走这套规则， 走身份证独有的规则
 * images: list[string], jpg图片， base64编码的bytes数据，不包含头部```data:image/jpg;base64,```， 理论上在html页面中， ```<img src='data:image/jpg;base64,{图片base64字符串}'>```可以直接显示图片
+
+## 其他操作
+### 如何加速运行
+除了起更多接口之外， 我们还可以在不影响使用效果的情况下将图片resize小一号再输入，大的图片在传输，卷积运算，写屏蔽后的图片时都很耗时
+
+### 没有屏蔽对怎么办
+可能有以下几种原因
+* 匹配关键词时没有匹配上
+* 字段名和字段值的bounding box粘连成一个 或 太远， 比如有时候姓名 张三占据两个box, 有时候会并到一个box
+* 身份证中有些字段没有符合身份证的关键词
+
+以上几种原因都可以通过return_json查看ocr结果来分析

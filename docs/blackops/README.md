@@ -1,9 +1,9 @@
 # 脱敏API 文档
-> 一个贴条脱敏 API
+> 一个贴条脱敏 API，使用产品前需要先提前对接领星的技术人员添加权限
 
 ## aws 部署
 > 前提条件
-* 有aws 中国的账号
+* 有aws 中国的账号, global账号目前不支持
 * 安装好较新版本的aws-cli
 * 设置好相应的```~/.aws/credential```文件和```~/.aws/config```文件, 见[aws-cli快速配置](https://docs.aws.amazon.com/zh_cn/cli/latest/userguide/cli-configure-quickstart.html#cli-configure-quickstart-config)
 * docker
@@ -22,6 +22,8 @@ echo $TOKEN
 docker login -u AWS -p $TOKEN https://046687694157.dkr.ecr.cn-northwest-1.amazonaws.com.cn
 ```
 * 获取镜像，大概4g多一点
+若获取权限有问题， 请联系领星的工作人员帮您添加aws账号
+
 ```shell
 docker pull 046687694157.dkr.ecr.cn-northwest-1.amazonaws.com.cn/blackops:latest
 ```
@@ -90,8 +92,12 @@ docker exec -it blackops /bin/bash taping_gunicorn.sh 10
 
 ### 没有屏蔽对怎么办
 可能有以下几种原因
+* 可能输入的图片不是从左到右阅读的方向
 * 匹配关键词时没有匹配上
 * 字段名和字段值的bounding box粘连成一个 或 太远， 比如有时候姓名 张三占据两个box, 有时候会并到一个box
 * 身份证中有些字段没有符合身份证的关键词
 
-以上几种原因都可以通过return_json查看ocr结果来分析
+#### 以上几种原因都可以通过return_json查看ocr结果来分析， 并可以尝试操作以下手段
+* 转置图片
+* 更改box_distance参数配置
+* 缩放、截取新的图片大小，可以影响到ocr bounding box的粘连

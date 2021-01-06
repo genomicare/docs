@@ -40,6 +40,17 @@ docker exec -it blackops /bin/bash taping_gunicorn.sh 10
 ```
 * 这样就能在 http://[host]:8867 看到服务了
 
+### 更新新版本
+基本上就是之前的代码一起跑一下
+```shell
+TOKEN=$(aws ecr get-login-password --region cn-northwest-1);
+docker login -u AWS -p $TOKEN https://046687694157.dkr.ecr.cn-northwest-1.amazonaws.com.cn;
+docker pull 046687694157.dkr.ecr.cn-northwest-1.amazonaws.com.cn/blackops:latest;
+docker container stop blackops;
+docker run -t -d --rm -dp 8867:8867 --name blackops 046687694157.dkr.ecr.cn-northwest-1.amazonaws.com.cn/blackops;
+docker exec -it blackops /bin/bash taping_gunicorn.sh 10
+```
+
 ## 服务调用
 
 ### 测试页面

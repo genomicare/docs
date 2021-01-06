@@ -41,4 +41,45 @@ docker exec -it blackops /bin/bash taping_gunicorn.sh 10
 ## 服务调用
 
 ### 测试页面
+如果想要比较直观的体验
+
 可以进入```http://[host]:8867/static/test.html```测试， 页面上会打印出调用接口时实际传入的参数
+
+### 接口访问
+如果直接访问接口使用
+
+* 地址 ```/taping```
+* 请求方法 ```POST```
+* 请求headers
+```json
+{"Content-Type": "application/json"}
+```
+* 数据传入json字符串
+
+#### 输入数据字段解释
+以下是传入数据的案例
+```json
+{
+    "block_name": false,
+    "block_value": true,
+    "box_distance": 0.15,
+    "color": null,
+    "return_input": true,
+    "return_json": true,
+    "mask_keys": [
+        "姓名",
+        "住院"
+    ],
+    "images": [
+        "/9j/4AAQSkZJRgABAQAA..."
+    ]
+}
+```
+* block_name, bool, 是否屏蔽字段名（中关键词的bounding box 本身)
+* block_value, bool, 是否屏蔽字段值 (中关键词的bounding box 右侧的bounding box， 两者相距不超过图片宽度X box_distance)
+* box_distance, float, 0~1之间浮点数， 用来判断两个bounding box 是否够近
+* color, string, 默认白色， 具体用来屏蔽文本的颜色， 输入色彩编码， 如 ```#AE134F```
+* return_input:bool, 默认false, 是否返回输入的json
+* return_json:bool, 默认false, 是否返回ocr的结果用于分析
+* mask_keys: list[string], 默认["姓名", "住院"], 需要屏蔽的关键词们, 身份证不走这套规则， 走身份证独有的规则
+* images: list[string], jpg图片， base64编码的bytes数据，不包含头部```data:image/jpg;base64,```， 理论上在html页面中， ```<img src='data:image/jpg;base64,{图片base64字符串}'>```可以直接显示图片

@@ -6,4 +6,5 @@
 
 ## Prototyping/ Experiments
 > A tracking record on experiments
-* [Tumor type classification](docs/experiments/tumor_type_classification_and_its_implications.html)
+
+* [Tumor type classification](docs/experiments/tumor_type_classification_and_its_implications.html) by reading MRI T1 enhanced imagere

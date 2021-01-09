@@ -5,6 +5,7 @@
 * [BlackOPS](https://genomicare.github.io/docs/docs/blackops/): cersoring text in image by keywords
 
 ## Prototyping/ Experiments
-> A tracking record on experiments
+> A tracking record on [experiments](docs/experiments/)
 
 * [Tumor type classification](docs/experiments/tumor_type_classification_and_its_implications.html) by reading MRI T1 enhanced imagere
+* Brain tumor [region prediction](docs/region_prediction.html) using MRI images (T1 enhanced)

@@ -37,7 +37,7 @@ For text too long, and you just want a quick answer within the text, you can jus
 * Text generation: solve most NLP as text generation problem (GPT, GPT2 based)
 
 #### Machine Translation
-> Currently we're using commercial API from other big tech on this subject, but translation.
+> Currently we're using commercial API from other big tech on this subject, but high performance translation on designated context can be achieved given enough labeled data. (Fine-tuning translation model)
 
 ## Graph Learning
 

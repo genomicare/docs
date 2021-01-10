@@ -1,8 +1,14 @@
 # Experiments
 
 ## Natural Language Processing
-> **Name Entity Recognition** (Extract meta/ structured data from a long piece of text). Actually the cases we showed are pipelines containing 2 steps:
-* NER task: Finds out the region of the text
+> A comprehensive Chrome extension utilize many of the NLP tech like NER, Q & A, medical translation
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-lxs1R08DNQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### **Name Entity Recognition**
+
+> NER task: Extract meta/ structured data from a long piece of text. Actually the cases we showed are pipelines containing 2 steps:
+* NER task: Finds out the region of the target(underline phrases within sentences)
 * Classification: Finds out what the underlined text is.
 
 ### Example

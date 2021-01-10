@@ -26,9 +26,10 @@ Which matches the knowledge base records from Genomicare
 ## MRI Image
 * Brain tumor type [classifications and feature visualization](tumor_type_classification_and_its_implications.html) using MRI images (T1 enhanced open dataset)
 * Brain tumor [region prediction](region_prediction.html) using MRI images (T1 enhanced open dataset)
-<img src="imgs/mri_region.jpeg" width=100>
-<img src="imgs/mri_region2.jpeg" width=100>
-<img src="imgs/mri_region3.jpeg" width=200>
+
+<img src="imgs/mri_region.jpeg" width=200>
+<img src="imgs/mri_region2.jpeg" width=200>
+<img src="imgs/mri_region3.jpeg" width=360>
 
 ## Chemicals
 * [SMILES string](https://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system) precict mutagenecity (one of the toxity), [prediction on CKB drugs](toxity_prediction_ames.html)

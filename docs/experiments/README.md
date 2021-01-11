@@ -40,10 +40,22 @@ For text too long, and you just want a quick answer within the text, you can jus
 > Currently we're using commercial API from other big tech on this subject, but high performance translation on designated context can be achieved given enough labeled data. (Fine-tuning translation model)
 
 ## Graph Learning
+> Machine Learning is great at leveraging its learning power in discrete data, where the feature of a node can be learned by the data records of interaction between nodes. eg. We don't define any feature of gene and drug,  but learn the map of their combination
+
+* Here is an example model built from [an open dataset: openbiolink](https://github.com/OpenBioLink/OpenBioLink)
+
+<img src="imgs/openbiolink2.png" width=300>
+<img src="imgs/openbiolink1.png" width=300>
 
 ## Computer Vision
 ### Image Data Privicy Protection
-> Redacting patient information with OCR tech by key words
+> Redacting patient information with OCR tech by **key words**
+
+<img src="imgs/blackops.png" width=300>
+
+As for now, we are using PaddleOCR for the OCR layer of the pipeline, then we redact some of the polygon regions when match specific/ configurable key word rule.
+
+If necessity demands, and with enough labeled data, we can finetune the OCR model.
 
 ### MRI Image
 * Brain tumor type [classifications and feature visualization](tumor_type_classification_and_its_implications.html) using MRI images (T1 enhanced open dataset)

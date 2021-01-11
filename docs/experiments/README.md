@@ -8,6 +8,12 @@
 
 Then we break it down piece by piece
 
+### Our own medical specific pretrained model BioElectra
+
+An [electra model](https://ai.googleblog.com/2020/03/more-efficient-nlp-model-pre-training.html) based on pubmed abstract and pmc text.
+
+<img src="imgs/maskedlm.jpeg" width=500>
+
 ### **Name Entity Recognition**
 
 > NER task: Extract meta/ structured data from a long piece of text. Actually the cases we showed are pipelines containing 2 steps:
@@ -15,7 +21,7 @@ Then we break it down piece by piece
 * Classification: Finds out what the underlined text is.
 
 #### NER Example
-> This following example is tring to find ```drug``` with text. For now, other targets like ```Gene, Mutation, Diseases``` also works in certain accuracy
+> This following example is tring to find ```drug``` with text. For now, other targets like ```Gene, Mutation, Diseases``` also works in certain accuracy.
 
 ```python
 from gc_lab.drug_norm import DrugNorm
@@ -28,7 +34,7 @@ this will output:
 ["Bicalutamide", "Famitinib", "Palbociclib"]
 ```
 
-Which matches the knowledge base records from Genomicare
+Which matches the knowledge base records from Genomicare, we also have API ready for that
 
 #### Question & Answering
 For text too long, and you just want a quick answer within the text, you can just type in the equestion, and model will under line an answer. Example see SAPERE AUDE demo video above
@@ -48,6 +54,12 @@ For text too long, and you just want a quick answer within the text, you can jus
 <img src="imgs/openbiolink1.png" width=300>
 
 ## Computer Vision
+
+### PDL1 - Immunohistochemical Analysis
+> From PDL1 IHC slides to ... anything
+
+<img src="imgs/pd1l.png", width=600>
+
 ### Image Data Privicy Protection
 > Redacting patient information with OCR tech by **key words**
 

@@ -39,7 +39,7 @@ Which matches the knowledge base records from Genomicare, we also have API ready
 #### Cloze as an inference tool
 > We can use cloze as an inference tool
 
-<img src="imgs/cloze_infernece.png" width=500>
+<img src="imgs/cloze_inference.png" width=500>
 
 #### Question & Answering
 For text too long, and you just want a quick answer within the text, you can just type in the equestion, and model will under line an answer. Example see SAPERE AUDE demo video above

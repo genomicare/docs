@@ -63,7 +63,7 @@ For text too long, and you just want a quick answer within the text, you can jus
 ### PDL1 - Immunohistochemical Analysis
 > From PDL1 IHC slides to ... anything
 
-<img src="imgs/pd1l.png" width=600>
+<img src="imgs/pdl1.png" width=600>
 
 ### Image Data Privicy Protection
 > Redacting patient information with OCR tech by **key words**

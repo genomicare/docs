@@ -1,5 +1,5 @@
 # OCR Tab
-> 从OCR 结果提炼数据
+> 把图片里的表格搬进您的数据库，一款极易定制文字识别后续应用
 
 ## 测试页面
 > [点此访问](http://ec2-52-83-78-143.cn-northwest-1.compute.amazonaws.com.cn:8050/static/html/test_ocr.html)测试页面， 如果没有权限请找领星生物的人员帮您开通

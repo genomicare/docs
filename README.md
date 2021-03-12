@@ -3,6 +3,7 @@
 
 * [Home](https://genomicare.github.io/docs/)
 * [BlackOPS](https://genomicare.github.io/docs/docs/blackops/): cersoring text in image by keywords
+* [OCR tab](https://genomicare.github.io/docs/docs/ocrtab/): from image to tabulated data
 
 ## Prototyping/ Experiments
 > A tracking record on [experiments](docs/experiments/)

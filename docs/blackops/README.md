@@ -24,13 +24,19 @@ docker login -u AWS -p $TOKEN https://046687694157.dkr.ecr.cn-northwest-1.amazon
 * 获取镜像，大概4g多一点
 若获取权限有问题， 请联系领星的工作人员帮您添加aws账号
 
+安装**极速版**
 ```shell
-docker pull 046687694157.dkr.ecr.cn-northwest-1.amazonaws.com.cn/blackops:latest
+docker pull 046687694157.dkr.ecr.cn-northwest-1.amazonaws.com.cn/blackops:fast
+```
+
+安装**豪华版**
+```shell
+docker pull 046687694157.dkr.ecr.cn-northwest-1.amazonaws.com.cn/blackops:x
 ```
 
 ### 运行docker
 ```shell
-docker run -t -d --rm -dp 8867:8867 --name blackops 046687694157.dkr.ecr.cn-northwest-1.amazonaws.com.cn/blackops
+docker run -t -d --rm -dp 8867:8867 --name blackops 046687694157.dkr.ecr.cn-northwest-1.amazonaws.com.cn/blackops:[fast or x]
 ```
 当然， 在运行这一步的时候， 您可以更改映射的外部端口号， 在使用接口时访问同样的端口号即可
 
@@ -41,7 +47,7 @@ docker exec -it blackops /bin/bash taping_gunicorn.sh 10
 * 这样就能在 http://[host]:8867 看到服务了
 
 ### 更新新版本
-基本上就是之前的代码一起跑一下
+基本上就是之前的代码一起跑一下(以极速版为案例)
 ```shell
 TOKEN=$(aws ecr get-login-password --region cn-northwest-1);
 docker login -u AWS -p $TOKEN https://046687694157.dkr.ecr.cn-northwest-1.amazonaws.com.cn;

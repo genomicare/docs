@@ -19,7 +19,9 @@
 * Neural Text Search
 * Relation Search by Target
 ![relation mining](imgs/relation_mining.png)
-* Mesh Classifier
+* Mesh Classifier, Author recommender
+![mesher](imgs/mesher.png)
+<img src='imgs/author_finder.png' width="100"/>
 
 ##### Cloud Computing
 * [Nebulium](https://github.com/genomicare/nebulium), fast deploy containerized data science application on AWS, using jupyter
@@ -48,8 +50,8 @@
 * Uniprot
 
 #### Experiments
-* Amino Acid Sequence => Cell RNA Transcriptom
-* Large pretrained model for Medical/Biology NLP
+* Amino Acid Sequence => Cell RNA Transcriptome
+* Large pretrained Roberta for Medical/Biology NLP
 * GPT J Inference
 
 #### PR attempt
@@ -92,6 +94,7 @@
 ![Omni-Paradigm Graph Neural Network Predictor](imgs/op_gnn.png)
 * Chinese BioMed Segementation
 ![Chinese BioMed Segementation](imgs/cn_seg.png)
+* A [whole slide image slicer](https://github.com/genomicare/durandal), docker image [here](https://hub.docker.com/r/raynardj/durandal)
 
 #### PR attempt
 Both well received

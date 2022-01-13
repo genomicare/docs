@@ -12,6 +12,7 @@
 ![aligner](imgs/aligner.png)
 * Multiple versions of graph database demo
 ![graph_demo](imgs/graph_demo.png)
+<img src="imgs/graph_demo.png" alt="graph_demo" width="300">
 
 ##### AI
 * NER model, frontend & API
@@ -19,9 +20,10 @@
 * Neural Text Search
 * Relation Search by Target
 ![relation mining](imgs/relation_mining.png)
+<img src="imgs/relation_mining.png" alt="relation mining" width="300px">
 * Mesh Classifier, Author recommender
-![mesher](imgs/mesher.png)
-<img src='imgs/author_finder.png' width="100"/>
+<img src="imgs/mesher.png" alt="mesher" width="400">
+<img src='imgs/author_finder.png' width="200"/>
 
 ##### Cloud Computing
 * [Nebulium](https://github.com/genomicare/nebulium), fast deploy containerized data science application on AWS, using jupyter
@@ -99,6 +101,6 @@
 #### PR attempt
 Both well received
 * Genomicare Training on data automation
-![lq training](imgs/lq_training.png)
+<img src="imgs/lq_training.png" alt="lq training" width="300">
 * [CAS session on big data/NLP for researching](https://mp.weixin.qq.com/s/F-j3tBrd9wh0Fhjt2660XA)
-![cas_talk](imgs/cas_talk.png)
+<img src="imgs/cas_talk.png" alt="cas_talk" width="300">

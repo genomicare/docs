@@ -1,5 +1,6 @@
 # Interim Progress (II)
 > 2021.07.01 - 2021.12.31
+
 ## Project
 ### CAS
 #### Productionized System
@@ -47,6 +48,7 @@
 
 # Interim Pregress (I)
 > 2021.01.01 - 2021.06.30
+
 ### Oceanus+
 #### Productionized
 * Improved version of blackops
@@ -63,7 +65,11 @@
 #### Experiments
 * Real world data patient screeting for clinical trial with shapley value
 * Omni-Paradigm Graph Neural Network Predictor
+![Omni-Paradigm Graph Neural Network Predictor](imgs/op_gnn.png)
+* Chinese BioMed Segementation
+![Chinese BioMed Segementation](imgs/cn_seg.png)
 #### PR attempt
 > Both well received
 * Genomicare Training on data automation
+![lq training](imgs/lq_training.png)
 * CAS session on big data/NLP for researching

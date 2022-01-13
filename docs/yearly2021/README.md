@@ -4,15 +4,20 @@
 ## Project
 ### CAS
 #### Productionized System
+
 ##### Frontend Application
 * NER Tagging System
 * Entity Aligning
+
 ##### AI
 * NER model, frontend & API
 * Neural Text Search
 * Relation Search by Target
+* Mesh Classifier
+
 ##### Cloud Computing
 * Neblulium, fast deploy containerized data science application on AWS, using jupyter
+
 ##### Smart Database
 * Clickhouse(191) big data system
 * Reactome => with Neo4J
@@ -28,18 +33,22 @@
     * NERed
     * Discriminated text: table data, reference data, figure description etc.
     * Figure Search by Target, Thumbnails Story view
+![full pmc](imgs/full_pmc.png)
 * Clinical trial: prototyping => hand over to LiJM
 * CheBI
 * DrugBank
 * Uniprot
+
 #### Experiments
 * Amino Acid Sequence => Cell RNA Transcriptom
 * Large pretrained model for Medical/Biology NLP
 * GPT J Inference
+
 #### PR attempt
 * RWD Planet Knowledge
 * CAS meetings offline and online
 * Meeting with everest
+
 #### Sourcing
 * Meetings with HW Cloud
 
@@ -52,7 +61,10 @@
 ### Oceanus+
 #### Productionized
 * Improved version of blackops
+![blackops](imgs/blackops.png)
 * OCRtab system
+![ocr_tab](imgs/ocr_tab.png)
+
 ### Others
 #### Productionized Things
 * Sapere Aude system
@@ -62,14 +74,18 @@
 #### Data Curating
 * TCGA whole slide images 1.9T/2153 slides (All we can get)
 * TCGA tables cleaned out of CSVs
+
 #### Experiments
 * Real world data patient screeting for clinical trial with shapley value
+![rwd ct filter](imgs/rwd.png)
 * Omni-Paradigm Graph Neural Network Predictor
 ![Omni-Paradigm Graph Neural Network Predictor](imgs/op_gnn.png)
 * Chinese BioMed Segementation
 ![Chinese BioMed Segementation](imgs/cn_seg.png)
+
 #### PR attempt
 > Both well received
 * Genomicare Training on data automation
 ![lq training](imgs/lq_training.png)
-* CAS session on big data/NLP for researching
+* [CAS session on big data/NLP for researching](https://mp.weixin.qq.com/s/F-j3tBrd9wh0Fhjt2660XA)
+![cas_talk](imgs/cas_talk.png)

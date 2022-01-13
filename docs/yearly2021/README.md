@@ -6,22 +6,26 @@
 #### Productionized System
 
 ##### Frontend Application
+
+<img src="imgs/pi_langhuan.png" alt="pi_langhuan" width="250">
+<img src="imgs/aligner.png" alt="aligner" width="250">
+<img src="imgs/graph_demo.png" alt="graph_demo" width="250">
+
 * NER Tagging System
-![pi_langhuan](imgs/pi_langhuan.png)
 * Entity Aligning
-![aligner](imgs/aligner.png)
 * Multiple versions of graph database demo
-![graph_demo](imgs/graph_demo.png)
-<img src="imgs/graph_demo.png" alt="graph_demo" width="300">
+
 
 ##### AI
+
+<img src="imgs/relation_mining.png" alt="relation mining" width="300px">
+<img src="imgs/ner.png" alt="ner_demo" width="300px">
+
 * NER model, frontend & API
-![ner_model](imgs/ner.png)
 * Neural Text Search
 * Relation Search by Target
-![relation mining](imgs/relation_mining.png)
-<img src="imgs/relation_mining.png" alt="relation mining" width="300px">
 * Mesh Classifier, Author recommender
+
 <img src="imgs/mesher.png" alt="mesher" width="400">
 <img src='imgs/author_finder.png' width="200"/>
 
@@ -31,7 +35,7 @@
 ##### Smart Database
 * Clickhouse(191) big data system
 * Reactome => with Neo4J
-![neo4j](imgs/neo4j.png)
+<img src="imgs/neo4j.png" alt="reactome" width="400">
 
 ### Everest
 * [x] Using gene/protein (target) to search for clinical trials
@@ -44,7 +48,7 @@
     * NERed
     * Discriminated text: table data, reference data, figure description etc.
     * Figure Search by Target, Thumbnails Story view
-![full pmc](imgs/full_pmc.png)
+<img src="imgs/full_pmc.png" alt="pmc_demo" width="400">
 * A stable PDF converter
 * Clinical trial: prototyping => hand over to LiJM
 * CheBI
@@ -61,7 +65,8 @@
 * CAS meetings offline and online
 * Meeting with everest
 * Applying for PAR (产学研)'s funding
-![par](imgs/par.png)
+
+<img src="imgs/par.png" alt="par" width="200">
 
 #### Sourcing
 * Meetings with HW Cloud
@@ -74,10 +79,12 @@
 
 ### Oceanus+
 #### Productionized
+
+<img src="imgs/blackops.png" alt="blackops" width="300">
+<img src="imgs/ocr_tab.png" alt="ocr_tab" width="300">
+
 * Improved version of blackops
-![blackops](imgs/blackops.png)
 * OCRtab system
-![ocr_tab](imgs/ocr_tab.png)
 
 ### Others
 #### Productionized Things
@@ -90,10 +97,10 @@
 * TCGA tables cleaned out of CSVs
 
 #### Experiments
+<img src='imgs/rwd.png' width="200"/><img src='imgs/op_gnn_demo.png' width="200"/>
 * Real world data patient screeting for clinical trial with shapley value
-<img src='imgs/rwd_ct.png' width="200"/>
 * Omni-Paradigm Graph Neural Network Predictor
-<img src='imgs/op_gnn_demo.png' width="200"/>
+
 * Chinese BioMed Segementation
 ![Chinese BioMed Segementation](imgs/cn_seg.png)
 * A [whole slide image slicer](https://github.com/genomicare/durandal), docker image [here](https://hub.docker.com/r/raynardj/durandal)
@@ -101,6 +108,6 @@
 #### PR attempt
 Both well received
 * Genomicare Training on data automation
-<img src="imgs/lq_training.png" alt="lq training" width="300">
 * [CAS session on big data/NLP for researching](https://mp.weixin.qq.com/s/F-j3tBrd9wh0Fhjt2660XA)
+<img src="imgs/lq_training.png" alt="lq training" width="300">
 <img src="imgs/cas_talk.png" alt="cas_talk" width="300">

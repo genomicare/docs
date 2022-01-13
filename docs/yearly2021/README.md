@@ -48,16 +48,19 @@
     * NERed
     * Discriminated text: table data, reference data, figure description etc.
     * Figure Search by Target, Thumbnails Story view
+
 <img src="imgs/full_pmc.png" alt="pmc_demo" width="400">
+
 * A stable PDF converter
-* Clinical trial: prototyping => hand over to LiJM
+* [Clinical trial](https://github.com/raynardj/gc_lab/blob/master/knowledge/drug/02_nct.ipynb): prototyping => hand over to LiJM
 * CheBI
 * DrugBank
 * Uniprot
+* [Wiki Data](https://github.com/raynardj/gc_lab/tree/master/knowledge/wikidata)
 
 #### Experiments
 * Amino Acid Sequence => Cell RNA Transcriptome
-* Large pretrained Roberta for Medical/Biology NLP
+* Large pretrained [Roberta for Medical/Biology NLP](https://github.com/raynardj/gc_lab/blob/master/knowledge/nlp/pubmed_finetune_02_roberta.ipynb)
 * GPT J Inference
 
 #### PR attempt
@@ -97,17 +100,21 @@
 * TCGA tables cleaned out of CSVs
 
 #### Experiments
-<img src='imgs/rwd.png' width="200"/><img src='imgs/op_gnn_demo.png' width="200"/>
-* Real world data patient screeting for clinical trial with shapley value
-* Omni-Paradigm Graph Neural Network Predictor
 
+<img src='imgs/rwd.png' width="200"/>
+<img src='imgs/op_gnn.png' width="200"/>
+<img src='imgs/cn_seg.png' width="200"/>
+
+* Real world data patient screeting for clinical trial with shapley value
+* [Omni-Paradigm Graph](https://github.com/raynardj/gc_lab/tree/master/masked_knowledge) Neural Network Predictor
 * Chinese BioMed Segementation
-![Chinese BioMed Segementation](imgs/cn_seg.png)
 * A [whole slide image slicer](https://github.com/genomicare/durandal), docker image [here](https://hub.docker.com/r/raynardj/durandal)
 
 #### PR attempt
 Both well received
+
 * Genomicare Training on data automation
 * [CAS session on big data/NLP for researching](https://mp.weixin.qq.com/s/F-j3tBrd9wh0Fhjt2660XA)
+
 <img src="imgs/lq_training.png" alt="lq training" width="300">
 <img src="imgs/cas_talk.png" alt="cas_talk" width="300">

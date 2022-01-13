@@ -89,9 +89,9 @@
 
 #### Experiments
 * Real world data patient screeting for clinical trial with shapley value
-![rwd ct filter](imgs/rwd.png)
+<img src='imgs/rwd_ct.png' width="200"/>
 * Omni-Paradigm Graph Neural Network Predictor
-![Omni-Paradigm Graph Neural Network Predictor](imgs/op_gnn.png)
+<img src='imgs/op_gnn_demo.png' width="200"/>
 * Chinese BioMed Segementation
 ![Chinese BioMed Segementation](imgs/cn_seg.png)
 * A [whole slide image slicer](https://github.com/genomicare/durandal), docker image [here](https://hub.docker.com/r/raynardj/durandal)

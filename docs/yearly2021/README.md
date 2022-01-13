@@ -35,6 +35,7 @@
 ##### Smart Database
 * Clickhouse(191) big data system
 * Reactome => with Neo4J
+
 <img src="imgs/neo4j.png" alt="reactome" width="400">
 
 ### Everest
@@ -49,7 +50,8 @@
     * Discriminated text: table data, reference data, figure description etc.
     * Figure Search by Target, Thumbnails Story view
 
-<img src="imgs/full_pmc.png" alt="pmc_demo" width="400">
+<img src="imgs/full_pmc.png" alt="pmc_demo" width="300">
+<img src="imgs/search_table.png" alt="search_table" width="300">
 
 * A stable PDF converter
 * [Clinical trial](https://github.com/raynardj/gc_lab/blob/master/knowledge/drug/02_nct.ipynb): prototyping => hand over to LiJM
